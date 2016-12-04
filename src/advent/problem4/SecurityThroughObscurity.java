@@ -73,7 +73,7 @@ public class SecurityThroughObscurity {
 
 		System.out.println(encryptedName + " : " + decryptedStr + " : " + reducedSectorId);
 
-		return target.equals(decryptedStr) ? true : false; 
+		return target.equals(decryptedStr); 
 	}
 
 	private static boolean getMostFrequent(String encryptedName, String checksum) {
@@ -104,6 +104,6 @@ public class SecurityThroughObscurity {
 			actual = actual.concat(key);
 		}
 
-		return actual.equals(checksum) ? true : false; 
+		return actual.equals(checksum); 
 	}
 }
